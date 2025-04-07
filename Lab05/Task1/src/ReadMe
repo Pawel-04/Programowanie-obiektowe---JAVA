@@ -1,0 +1,30 @@
+Zadanie 1. System zarządzania flotą pojazdów
+Zaprojektuj system zarządzania flotą pojazdów z wykorzystaniem dziedziczenia i kompozycji w języku
+Java. W systemie powinny występować różne typy pojazdów, które dziedziczą po klasie bazowej, oraz
+komponenty pojazdu (np. silnik, zbiornik paliwa), które są realizowane przez kompozycję.
+Wymagania funkcjonalne
+Klasa bazowa Vehicle, powinna zawierać pola takie jak:
+• brand (marka pojazdu)
+• model
+• year (rok produkcji)
+• maxSpeed (maksymalna prędkość)
+• Powinna posiadać metodę displayInfo(), która wyświetla informacje o pojeździe.
+Podklasy Car i Truck dziedziczące po Vehicle
+• Car (samochód osobowy) powinien mieć dodatkowe pole passengerCapacity (pojemność
+pasażerska).
+• Truck (ciężarówka) powinien mieć dodatkowe pole loadCapacity (maksymalna ładowność w
+tonach).
+Kompozycja: Klasa Engine (Silnik), powinna zawierać:
+• power (moc w KM)
+• fuelType (rodzaj paliwa)
+• startEngine() (metoda uruchamiająca silnik, np. wyświetlająca komunikat "Silnik
+uruchomiony").
+• Powinna być składową klasy Vehicle.
+Kompozycja: Klasa FuelTank (Zbiornik paliwa), powinna zawierać:
+• capacity (pojemność zbiornika)
+• currentLevel (aktualny poziom paliwa)
+• Metody refuel(double amount) (zatankowanie) i consume(double amount) (zużycie paliwa).
+Testowanie rozwiązania
+• Utwórz obiekty Car i Truck, przypisz im silniki oraz zbiorniki paliwa.
+• Wywołaj metody displayInfo(), startEngine(), refuel() i consume(), aby przetestować
+funkcjonalność.
