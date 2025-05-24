@@ -15,10 +15,16 @@ public class Main {
         Figura figura = new Figura("zielony");
         Prostokat prostokat = new Prostokat(12, 5);
         Trojkat trojkat = new Trojkat(10, 6);
+        Okrag okrag = new Okrag(punkt1, 4);
+        Kwadrat kwadrat = new Kwadrat("niebieski", 7);
 
-        figura.opis();
-        prostokat.getPowierzchnia();
-        trojkat.opis
-
+        System.out.println(figura.opis());
+        System.out.println(prostokat.getPowierzchnia());
+        trojkat.pole();
+        System.out.println(okrag.wSrodku(punkt1));
+        prostokat.przesun(3,5);
+        System.out.println(kwadrat.opis() + " Pole: " + kwadrat.getPowierzchnia());
+        System.out.println(prostokat.opis());
+        System.out.println(trojkat.opis());
     }
 }

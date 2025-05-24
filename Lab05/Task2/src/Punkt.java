@@ -37,8 +37,10 @@ public class Punkt {
         System.out.println("Punkt ma współrzędne: (" + x + ", " + y + ")");
     }
 
-    public void przesun(int x, int y) {
+    public void przesun(float x, float y) {
         this.x += x;
         this.y += y;
     }
+
+
 }
