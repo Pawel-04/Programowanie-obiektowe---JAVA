@@ -5,7 +5,7 @@ public class Main {
         Tasks tasks = new Tasks();
         Scanner scanner = new Scanner(System.in);
         System.out.println("Wybierz które zadanie chcesz rozwiązać: \n1 - Zadanie 1. \n2 - Zadanie 2. \n3 - Zadanie 3. " +
-                "\n4 - Zadanie 4. \n5 - Zadanie 5. \n6. Wyjście. \n\nNumer zadania: ");
+                 "\n4. Wyjście. \n\nNumer zadania: ");
 
         int wybor = scanner.nextInt();
 
@@ -23,14 +23,6 @@ public class Main {
                 break;
 
             case 4:
-                tasks.Task04();
-                break;
-
-            case 5:
-                tasks.Task05();
-                break;
-
-            case 6:
                 System.out.println("Zakończenie programu.");
                 break;
 
